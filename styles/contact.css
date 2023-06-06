@@ -63,6 +63,8 @@ p {
     margin-bottom: 20px;
 }
 
+
+
 .container {
     display: flex;
     align-items: center;
@@ -74,12 +76,10 @@ p {
     background-color: #fff;
     margin-bottom: 60px;
 }
-
 .form-wrapper {
     flex: 1;
     margin-right: 20px;
 }
-
 .form-group {
     margin-bottom: 20px;
 }
@@ -147,5 +147,21 @@ footer{
     
     }
 
+    @media screen and (max-width: 768px) {
+
+        .BoxContainerCabecalho {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .BoxContainerCabecalho .logo {
+            margin-bottom: 10px;
+        }
+    
+        .linkNav {
+        
+            font-size: 15px;
+        }
+    }
 
     
