@@ -3,161 +3,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+
 }
-@media only screen and (max-width: 767px) {
-    body {
-        font-size: 14px;
-    }
-    .BoxContainerCabecalho {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .BoxContainerCabecalho .logo {
-        margin-bottom: 10px;
-    }
-
-    .BoxContainerCabecalho {
-        padding: 10px;
-    }
-
-    .linkNav {
-        font-size: 14px;
-    }
-
-    .AIs {
-        background-size: cover;
-        
-    }
-
-    .glass-effect {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .textoBox {
-        font-size: 30px;
-        padding: 20px;
-        padding-top: 35px;
-        line-height: 60px;
-    }
-
-    .IAs {
-        padding: 20px;
-    }
-
-    .boxImage {
-        flex-direction: column;
-    }
-
-    .boxImage img {
-        width: 100%;
-    }
-    .boxImage2 {
-        flex-direction: column;
-        align-items: center;
-    }
-    .boxImage2 img {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .integrantes {
-        padding-left: 0;
-        text-align: center;
-    }
-}
-/* Estilos para tablets */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-    body {
-        font-size: 16px;
-    }
-    .BoxContainerCabecalho {
-        padding: 15px;
-    }
-    .linkNav {
-        font-size: 16px;
-    }
-    .AIs {
-        background-size: cover;
-    }
-    .glass-effect {
-        margin-left: 50%;
-        width: 50%;
-    }
-    .textoBox {
-        font-size: 40px;
-        padding: 30px;
-        padding-top: 45px;
-        line-height: 90px;
-    }
-    .IAs {
-        padding: 30px;
-    }
-    .boxImage {
-        flex-direction: row;
-    }
-    .boxImage img {
-        width: 800px;
-    }
-    .boxImage2 {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    .boxImage2 img {
-        width: 550px;
-        margin-bottom: 0;
-    }
-    footer {
-        flex-direction: row;
-        align-items: flex-start;
-    }
-    .integrantes {
-        padding-left: 40px;
-        text-align: left;
-    }
-}
 body{
+
    width: 100%;
    min-height: 100vh;
    overflow-y: scroll;
    scrollbar-width: thin;
    scrollbar-color: transparent transparent;
    font-family: 'Roboto', sans-serif;
+
 }
+
 body::-webkit-scrollbar {
     width: 0px; 
   }
 
-.BoxContainerCabecalho{   
+.BoxContainerCabecalho{
+
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 15px;
     background-color: white;
+    
 }
+
 a{
 
   text-decoration: none;
 }
+
 .linkNav{
     text-decoration: none;
     color: black;
     font-size: 17px;
     transition: 0.3s;
-    -webkit-text-stroke: 0.3px 
+    -webkit-text-stroke: 0.3px
+    
 }
+
 .linkNav:hover{
+
 color: rgb(0, 188, 0);
 font-size: 17px;
 transition: 0.5s;
+
 }
+
 .AIs{
     margin: 0;
     width: 100%;
@@ -165,32 +63,49 @@ transition: 0.5s;
     background-image: url(/imagesIAs/IAs.png);
     background-size: cover;
     color: white;
+
 }
+
 .glass-effect{
+
     margin-left: 60%;
     width: 40%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.071);
     backdrop-filter: blur(5px);
     z-index: 1;
+  
   }
-.textoBox{
+  
+  .textoBox{
+  
     color: white;
     font-size: 80px;
     padding: 40px;
     padding-top: 55px;
-    line-height: 120px; 
+    line-height: 120px;
+  
   }
+
+
 .IAs{
+
     line-height: 30px;
     padding: 40px;
     max-width: 100%;
+
 }
+
+
+
 .boxImage{
+
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
+
 .section-title {
     color: #333;
     font-size: 24px;
@@ -198,6 +113,7 @@ transition: 0.5s;
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 .sub-title {
     color: #333;
     font-size: 18px;
@@ -205,26 +121,173 @@ transition: 0.5s;
     margin-top: 10px;
     margin-bottom: 5px;
 }
+
 .boxImage2{
+
     display: flex;
     justify-content: space-around;
     margin-bottom: 40px;
+
 }
+
+
+
+
 .brandwhite{
+
     width: 150px;
+    
     }
-footer{
+    
+    
+    footer{
+    
     background-color: rgb(24, 24, 24);
     display: flex;
     flex-direction: row;
     padding: 30px;
     color: white;
+    
     }
     
-.integrantes{
+    .integrantes{
+    
     padding-left: 40px;
     font-size: 14px;
     line-height: 20px;
+    
     }
     
+    @media only screen and (max-width: 767px) {
+        body {
+            font-size: 14px;
+        }
+        .BoxContainerCabecalho {
+            flex-direction: column;
+            align-items: center;
+        }
     
+        .BoxContainerCabecalho .logo {
+            margin-bottom: 10px;
+        }
+
+        .BoxContainerCabecalho {
+            padding: 10px;
+        }
+
+        .linkNav {
+            font-size: 14px;
+        }
+
+        .AIs {
+            background-size: cover;
+            
+        }
+
+        .glass-effect {
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .textoBox {
+            font-size: 30px;
+            padding: 20px;
+            padding-top: 35px;
+            line-height: 60px;
+        }
+
+        .IAs {
+            padding: 20px;
+        }
+
+        .boxImage {
+            flex-direction: column;
+        }
+
+        .boxImage img {
+            width: 100%;
+        }
+
+        .boxImage2 {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .boxImage2 img {
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .integrantes {
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+
+    /* Estilos para tablets */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        body {
+            font-size: 16px;
+        }
+
+        .BoxContainerCabecalho {
+            padding: 15px;
+        }
+
+        .linkNav {
+            font-size: 16px;
+        }
+
+        .AIs {
+            background-size: cover;
+        }
+
+        .glass-effect {
+            margin-left: 50%;
+            width: 50%;
+        }
+
+        .textoBox {
+            font-size: 40px;
+            padding: 30px;
+            padding-top: 45px;
+            line-height: 90px;
+        }
+
+        .IAs {
+            padding: 30px;
+        }
+
+        .boxImage {
+            flex-direction: row;
+        }
+
+        .boxImage img {
+            width: 800px;
+        }
+
+        .boxImage2 {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .boxImage2 img {
+            width: 550px;
+            margin-bottom: 0;
+        }
+
+        footer {
+            flex-direction: row;
+            align-items: flex-start;
+        }
+
+        .integrantes {
+            padding-left: 40px;
+            text-align: left;
+        }
+    }
