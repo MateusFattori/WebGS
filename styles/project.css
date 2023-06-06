@@ -1,38 +1,80 @@
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}
 
+@media only screen and (max-width: 767px) {
+
+    .BoxContainerCabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BoxContainerCabecalho .logo {
+        margin-bottom: 10px;
+    }
+    .tituloProjeto {
+        font-size: 50px;
+    }
+
+    .ContainerBeneficios {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .BoxVideo {
+        margin: 20px;
+    }
+
+    .integrantes {
+        padding-left: 10px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .tituloProjeto {
+        font-size: 70px;
+    }
+
+    .ContainerBeneficios {
+        padding: 30px;
+    }
+
+    .BoxVideo {
+        margin: 30px;
+    }
+
+    .integrantes {
+        padding-left: 20px;
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 body{
-
    width: 100%;
    min-height: 100vh;
    overflow-y: scroll;
    scrollbar-width: thin;
    scrollbar-color: transparent transparent;
-
    font-family: 'Roboto', sans-serif;
-
 }
 
 body::-webkit-scrollbar {
     width: 0px; 
-  }
+}
 
   .BoxContainerCabecalho{
-
-    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 15px;
     background-color: white;
-
 }
 
 a{
@@ -46,148 +88,69 @@ a{
     font-size: 17px;
     transition: 0.3s;
     -webkit-text-stroke: 0.3px
-    
 }
 
 .linkNav:hover{
-
-color: rgb(0, 188, 0);
+    color: rgb(0, 188, 0);
 font-size: 17px;
 transition: 0.5s;
-
 }
 
-
-
 .ContainerProject{
-
     margin: 0;
     width: 100%;
     height: 100%;
     background-image: url(/imagesproject/BackProject.png);
     background-size: cover;
-
-
-
 }
 
 .tituloProjeto{
-
     background-color: rgba(255, 255, 255, 0.084);
     max-width: 40%;
     font-size: 90px;
     color: white;
     padding: 30px;
-    
-
 }
 
 
-.BoxContainerBeneficios{
-
-    
+.BoxContainerBeneficios{   
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 30px;
-     
 }
 
 .ContainerBeneficios{
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
     padding: 20px;
-
 }
 
 .BoxVideo{
-
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 40px;
-
-
 }
 
 .brandwhite{
-
-    width: 150px;
+    width: 150px;   
+}
     
-    }
-    
-    
-    footer{
-    
+footer{
     background-color: rgb(24, 24, 24);
     display: flex;
     flex-direction: row;
     padding: 30px;
     color: white;
     
-    }
-    
-    .integrantes{
-    
+}
+
+.integrantes{
     padding-left: 40px;
     font-size: 14px;
     line-height: 20px;
-    
-    }
-    
-
-    @media only screen and (max-width: 767px) {
-
-        .BoxContainerCabecalho {
-            flex-direction: column;
-            align-items: center;
-        }
-    
-        .BoxContainerCabecalho .logo {
-            margin-bottom: 10px;
-        }
-        .tituloProjeto {
-            font-size: 50px;
-        }
-    
-        .ContainerBeneficios {
-            flex-direction: column;
-            align-items: center;
-            padding: 10px;
-        }
-    
-        .BoxVideo {
-            margin: 20px;
-        }
-    
-        .integrantes {
-            padding-left: 10px;
-            font-size: 12px;
-            line-height: 18px;
-        }
-    }
-
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-        .tituloProjeto {
-            font-size: 70px;
-        }
-    
-        .ContainerBeneficios {
-            padding: 30px;
-        }
-    
-        .BoxVideo {
-            margin: 30px;
-        }
-    
-        .integrantes {
-            padding-left: 20px;
-            font-size: 16px;
-            line-height: 24px;
-        }
-    }
+}

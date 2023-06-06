@@ -1,27 +1,82 @@
 *{
-
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}
 
+@media screen and (max-width: 768px) {
+
+    .BoxContainerCabecalho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BoxContainerCabecalho .logo {
+        margin-bottom: 10px;
+    }
+
+    .linkNav {
+    
+        font-size: 15px;
+    }
+
+    .Agricultura{
+        background-size: cover;
+    }
+
+    .glass-effect {
+     
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .textoBox {
+    
+        font-size: 60px;
+        padding: 20px;
+        padding-top: 35px;
+    }
+
+    .principios {
+     
+        padding: 20px;
+    }
+
+    .boxImages {
+    
+        flex-direction: column;
+    }
+
+    .brandwhite {
+    
+        width: 120px;
+    }
+
+    .integrantes {
+    
+        font-size: 12px;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+
     .textoBox {
         
         font-size: 75px;
         padding: 30px;
         padding-top: 45px;
     }
+
     .principios {
         
         padding: 30px;
     }
+
     .brandwhite {
         
         width: 140px;
     }
+
     .integrantes {
         
         font-size: 14px;
@@ -39,7 +94,7 @@ body{
 
 body::-webkit-scrollbar {
     width: 0px; 
-  }
+}
 
 .BoxContainerCabecalho{
     display: flex;
@@ -48,7 +103,6 @@ body::-webkit-scrollbar {
     justify-content: space-around;
     padding: 15px;
     background-color: white;
-
 }
 
 a{
@@ -61,13 +115,12 @@ a{
     font-size: 17px;
     transition: 0.3s;
     -webkit-text-stroke: 0.3px
-    
 }
 
 .linkNav:hover{
-color: rgb(0, 188, 0);
-font-size: 17px;
-transition: 0.5s;
+    color: rgb(0, 188, 0);
+    font-size: 17px;
+    transition: 0.5s;
 }
 
 .Agricultura{
@@ -86,14 +139,14 @@ transition: 0.5s;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     z-index: 1;
-  }
-  
-  .textoBox{
+}
+
+.textoBox{
     color: white;
     font-size: 90px;
     padding: 40px;
     padding-top: 55px;
-  }
+}
 
 .principios{
     line-height: 30px;
@@ -106,62 +159,20 @@ transition: 0.5s;
     justify-content: space-around;
 }
 
+
 .brandwhite{
     width: 150px;
 }
- 
+
 footer{
     background-color: rgb(24, 24, 24);
     display: flex;
     flex-direction: row;
     padding: 30px;
     color: white;
-    }
+}
     
 .integrantes{
     padding-left: 40px;
     font-size: 14px;
-    }
-    
-
-    @media screen and (max-width: 768px) {
-        .BoxContainerCabecalho {
-            flex-direction: column;
-            align-items: center;
-        }
-        .BoxContainerCabecalho .logo {
-            margin-bottom: 10px;
-        }
-        .linkNav {
-        
-            font-size: 15px;
-        }
-        .Agricultura{
-            background-size: cover;
-        }
-        .glass-effect {
-         
-            margin-left: 0;
-            width: 100%;
-        }
-        .textoBox {
-        
-            font-size: 60px;
-            padding: 20px;
-            padding-top: 35px;
-        }
-        .principios {
-         
-            padding: 20px;
-        }
-        .boxImages {
-            flex-direction: column;
-        }
-        .brandwhite {
-            width: 120px;
-        }
-        .integrantes {
-            font-size: 12px;
-        }
-    }
-
+}
