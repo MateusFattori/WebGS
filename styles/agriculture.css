@@ -7,6 +7,32 @@
 
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+        
+    
+    .textoBox {
+        
+        font-size: 75px;
+        padding: 30px;
+        padding-top: 45px;
+    }
+
+    .principios {
+        
+        padding: 30px;
+    }
+
+    .brandwhite {
+        
+        width: 140px;
+    }
+
+    .integrantes {
+        
+        font-size: 14px;
+    }
+}
+
 body{
 
    width: 100%;
