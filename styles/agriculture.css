@@ -8,25 +8,20 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-        
-    
     .textoBox {
         
         font-size: 75px;
         padding: 30px;
         padding-top: 45px;
     }
-
     .principios {
         
         padding: 30px;
     }
-
     .brandwhite {
         
         width: 140px;
     }
-
     .integrantes {
         
         font-size: 14px;
@@ -34,15 +29,12 @@
 }
 
 body{
-
    width: 100%;
    min-height: 100vh;
    overflow-y: scroll;
    scrollbar-width: thin;
    scrollbar-color: transparent transparent;
-
    font-family: 'Roboto', sans-serif;
-
 }
 
 body::-webkit-scrollbar {
@@ -50,8 +42,6 @@ body::-webkit-scrollbar {
   }
 
 .BoxContainerCabecalho{
-
-    
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,7 +52,6 @@ body::-webkit-scrollbar {
 }
 
 a{
-
   text-decoration: none;
 }
 
@@ -76,11 +65,9 @@ a{
 }
 
 .linkNav:hover{
-
 color: rgb(0, 188, 0);
 font-size: 17px;
 transition: 0.5s;
-
 }
 
 .Agricultura{
@@ -90,125 +77,90 @@ transition: 0.5s;
     background-image: url(/imagesAgriculture/sustentabilidade.png);
     background-size: cover;
     color: white;
-
 }
 
 .glass-effect{
-
     margin-left: 60%;
     width: 40%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     z-index: 1;
-  
   }
   
   .textoBox{
-  
     color: white;
     font-size: 90px;
     padding: 40px;
     padding-top: 55px;
-  
   }
 
 .principios{
-
     line-height: 30px;
     padding: 40px;
-
 }
   
 .boxImages{
-
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-
-
 }
 
-
- 
-
 .brandwhite{
-
     width: 150px;
-    
-    }
-    
-    
+}
+ 
 footer{
-    
     background-color: rgb(24, 24, 24);
     display: flex;
     flex-direction: row;
     padding: 30px;
     color: white;
-    
     }
     
 .integrantes{
-    
     padding-left: 40px;
     font-size: 14px;
-    
-    
     }
     
 
     @media screen and (max-width: 768px) {
-
         .BoxContainerCabecalho {
             flex-direction: column;
             align-items: center;
         }
-    
         .BoxContainerCabecalho .logo {
             margin-bottom: 10px;
         }
-    
         .linkNav {
         
             font-size: 15px;
         }
-    
         .Agricultura{
             background-size: cover;
         }
-    
         .glass-effect {
          
             margin-left: 0;
             width: 100%;
         }
-    
         .textoBox {
         
             font-size: 60px;
             padding: 20px;
             padding-top: 35px;
         }
-    
         .principios {
          
             padding: 20px;
         }
-    
         .boxImages {
-        
             flex-direction: column;
         }
-    
         .brandwhite {
-        
             width: 120px;
         }
-    
         .integrantes {
-        
             font-size: 12px;
         }
     }
