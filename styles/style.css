@@ -1,0 +1,335 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+
+   width: 100%;
+   min-height: 100vh;
+   overflow-y: scroll;
+   scrollbar-width: thin;
+   scrollbar-color: transparent transparent;
+
+   font-family: 'Roboto', sans-serif;
+
+}
+
+body::-webkit-scrollbar {
+    width: 0px; 
+  }
+
+.BoxContainerCabecalho{
+
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+a{
+
+  text-decoration: none;
+}
+
+.linkNav{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    transition: 0.3s;
+    -webkit-text-stroke: 0.3px
+    
+}
+
+.linkNav:hover{
+
+color: rgb(0, 188, 0);
+font-size: 17px;
+transition: 0.5s;
+
+}
+
+
+.BoxContainerIndex{
+
+ margin: 0;
+ width: 100%;
+ height: 100%;
+ background-image: url(/images/IndexBack.png);
+ background-size: cover;
+
+}
+
+.glass-effect{
+
+  margin-left: 60%;
+  width: 40%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+
+}
+
+.textoBox{
+
+  color: white;
+  font-size: 70px;
+  padding: 40px;
+  padding-top: 55px;
+
+}
+
+.texto2Box{
+    
+  color: white;
+  font-size: 27px;
+  padding: 40px;
+
+
+}
+
+
+.BoxContainerImages{
+
+  background-color: rgb(240, 240, 240);
+  padding-top: 100px;
+  padding-bottom: 130px;
+
+
+}
+
+
+.textoTituloImages{
+
+padding-bottom: 10px;
+text-align: center;
+
+}
+
+
+.ContainerImages{
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ 
+ background-color: rgb(240, 240, 240);
+ 
+
+}
+
+.BoxImage{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 70px;
+background-color: white;
+
+
+}
+
+
+
+.buttonsLink{
+
+text-decoration: none;
+color: black;
+padding: 11px;
+border: none;
+background-color: rgb(224, 224, 224);
+margin-top: 15px;
+border-radius: 18px;
+font-size: 17px;
+transition: 0.4s;
+-webkit-text-stroke: 0.5px
+
+
+}
+
+.buttonsLink:hover{
+
+text-decoration: none;
+color: white;
+background-color: rgb(125, 190, 125);
+color: white;
+transition: 0.4s;
+font-size: 17px;
+-webkit-text-stroke: 0.5px
+
+
+}
+
+
+
+.image{
+
+
+background-color: white;
+padding: 20px;
+
+
+
+}
+
+.textoImage{
+
+  max-width: 250px;
+  text-align: center;
+  background-color: white;
+  
+  -webkit-text-stroke: 0.3px
+  
+
+  
+
+}
+
+
+.brandwhite{
+
+width: 150px;
+
+}
+
+
+footer{
+
+background-color: rgb(24, 24, 24);
+display: flex;
+flex-direction: row;
+padding: 30px;
+color: white;
+
+}
+
+.integrantes{
+
+padding-left: 40px;
+font-size: 14px;
+line-height: 20px;
+
+}
+
+@media (max-width: 600px) {
+  .BoxContainerCabecalho {
+    flex-direction: column;
+    padding: 40px 0;
+  }
+
+  .linkNav {
+    font-size: 14px;
+  }
+
+  .glass-effect {
+    margin-left: 0;
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+  }
+
+  .textoBox {
+    font-size: 40px;
+    padding: 20px;
+    padding-top: 35px;
+  }
+
+  .texto2Box {
+    font-size: 20px;
+    padding: 20px;
+  }
+
+  .BoxContainerImages {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  .textoTituloImages {
+    font-size: 22px;
+  }
+
+  .ContainerImages {
+    flex-direction: column;
+  }
+
+  .BoxImage {
+    padding-bottom: 50px;
+  }
+
+  .buttonsLink {
+    font-size: 14px;
+  }
+
+  .image {
+    padding: 10px;
+  }
+
+  .textoImage {
+    max-width: 180px;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .integrantes {
+    padding-left: 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .BoxContainerCabecalho {
+    padding: 10px;
+  }
+
+  .textoBox {
+    font-size: 50px;
+    padding: 30px;
+    padding-top: 45px;
+  }
+
+  .texto2Box {
+    font-size: 24px;
+    padding: 30px;
+  }
+
+  .BoxContainerImages {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  .textoTituloImages {
+    font-size: 26px;
+  }
+
+  .BoxImage {
+    padding-bottom: 60px;
+  }
+
+  .buttonsLink {
+    font-size: 16px;
+  }
+
+  .image {
+    padding: 15px;
+  }
+
+  .textoImage {
+    max-width: 220px;
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .integrantes {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+}
+
